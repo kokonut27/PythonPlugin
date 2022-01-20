@@ -14,7 +14,6 @@ class PythonPlugin:
     global start
     if python_version != sys.version[:3]:
       raise IncorrectPythonVersion("Using incorrect Python version!")
-      start = False
     else:
       start = True
     self.start = start
